@@ -8,8 +8,8 @@ body {
 
 .container {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 450px;
   display: inline-block;
 }
 
@@ -26,15 +26,15 @@ body {
   -ms-transform: translate(-50%, -50%);
   background-color: transparent;
   border-color: black;
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 450px;
   border-style:none;
   transition-duration: 0.5s;
 }
 
 .button {
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 450px;
   border-style:none;
   transition-duration: 0.5s;
 }
@@ -48,6 +48,4 @@ body {
 .wrapper
 {
    text-align: center;
-   border-style: solid;
-   border-color: #00ff00
 }
