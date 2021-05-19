@@ -1,95 +1,76 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>BoatsAtSea</title>
+			<title>Boats at sea</title>
 			<link rel="stylesheet" href="styles.css">
 </head>
 	<body>
-		<div class="tab">
-			<button class="tablinks" onclick="OpenTab(event, 'tabOc')">&nbsp;Oc&nbsp;</button>
-			<button class="tablinks" onclick="OpenTab(event, 'tabISO')">&nbsp;ISO&nbsp;</button>
-			<button class="tablinks" onclick="OpenTab(event, 'tabFl')">&nbsp;Fl&nbsp;</button>
-			<button class="tablinks" onclick="OpenTab(event, 'tabQ')">&nbsp;Q&nbsp;</button>
-			<button class="tablinks" onclick="OpenTab(event, 'tabVQ')">&nbsp;VQ&nbsp;</button>
-			<button class="tablinks" onclick="OpenTab(event, 'tabUQ')">&nbsp;UQ&nbsp;</button>
-			<button class="tablinks" onclick="OpenTab(event, 'tabKardinal')">&nbsp;Kardinal&nbsp;</button>
-			<button class="tablinks" onclick="OpenTab(event, 'tabTest');fRandom()">&nbsp;Test&nbsp;</button>
+
+		<div class="wrapper">
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
+
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
+
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
 		</div>
 
-		<div id="tabFl" class="tabcontent">
-				<h3>Blink</h3>
-				<button onclick="fFlashing(1,3)">Fl 3s</button>
-				<button onclick="fFlashing(1,5)">Fl 5s</button>
-				<button onclick="fFlashing(2,6)">Fl(2) 6s</button>
-				<button onclick="fFlashing(3,8)">Fl(3) 8s</button>
+		<div class="wrapper">
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
+
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
+
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
+
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
 		</div>
 
-		<div id="tabQ" class="tabcontent">
-				<h3>Hurtigblink</h3>
-				<button onclick="fQ(1,0,0)">Q</button>
-				<button onclick="fQ(3,10,0)">Q(3) 10s</button>
-				<button onclick="fQ(9,15,0)">Q(9) 15s</button>
-		</div>
+		<div class="wrapper">
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
 
-		<div id="tabVQ" class="tabcontent">
-				<h3>Rask hurtigblink</h3>
-				<button onclick="fVQ(1,0)">VQ</button>
-				<button onclick="fVQ(3,5)">VQ(3) 5s</button>
-				<button onclick="fVQ(9,10)">VQ(9) 10s</button>
-		</div>
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
 
-		<div id="tabUQ" class="tabcontent">
-				<h3>Ultra hurtigblink</h3>
-				<button onclick="fUQ(1,0)">UQ</button>
-		</div>
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
 
-		<div id="tabOc" class="tabcontent">
-				<h3>Okkulterende</h3>
-				<button onclick="fOcculting(1,6)">Oc 6s</button>
-				<button onclick="fOcculting(2,8)">Oc(2) 8s</button>
-				<button onclick="fOcculting(3,12)">Oc(3) 12s</button>
-		</div>
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
 
-		<div id="tabISO" class="tabcontent">
-				<h3>Isofase</h3>
-				<button onclick="fISO(2)">ISO 2s</button>
-				<button onclick="fISO(4)">ISO 4s</button>
-				<button onclick="fISO(6)">ISO 6s</button>
+			<div class="container">
+				<button class="button" onclick="test()"></button>
+				<img src="bilde1.png">
+			</div>
 		</div>
-
-		<div id="tabKardinal" class="tabcontent">
-				<h3>Kardinalmerker</h3>
-				<button onclick="fQ(1,0,0)">Nord<br>Q</button>
-				<button onclick="fQ(3,10,0)">Øst<br>Q(3) 10s</button>
-				<button onclick="fQ(6,15,1)">Syd<br>Q(6) + LFl 15s</button>
-				<button onclick="fQ(9,15,0)">Vest<br>Q(9) 15s</button>
-		</div>
-
-		<div id="tabTest" class="tabcontent">
-				<h3>Trykk "ny" for å se en tilfeldig lyskarakteristikk</h3>
-				<button onclick="fRandom()">Ny</button>
-		</div>
-
-		<table border="0" align="center">
-			<tr>
-				<td width="1024" height="200">
-					<div id="lightgrid"></div>
-					<div id="PointingArrow" class="PointingArrow"></div>
-				</td>
-			</tr>
-			<tr>
-				<td width="600" height="100">
-					<div class="imageparent">
-						<img id="lys" class="lys" src="lys.png">
-						<img class="fyr" src="fyr.png"></div>
-				</td>
-			</tr>
-			<tr>
-				<td width="600">
-					<div id="TextField"></div>
-				</td>
-			</tr>
-		</table>
 
 		<script src="javascript.js"></script>
 	</body>
