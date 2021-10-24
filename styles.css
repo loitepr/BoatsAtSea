@@ -6,15 +6,62 @@ body {
   background-color:  black;
 }
 
-img {
-  width: 450px;
-  height: 450px;
+.led-green {
+  margin: 0;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #00FF00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 255, 0, 0.5) 0 -1px 7px 1px, inset #009900 0 -1px 9px, #00FF00 0 2px 12px;
 }
 
-.wrapper
-{
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-   width: 970px;
+.led-blue {
+  margin: 0;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #0000ff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 255, 0.5) 0 -1px 7px 1px, inset #000099 0 -1px 9px, #0000ff 0 2px 12px;
+}
+
+.led-red {
+  margin: 0;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  box-shadow: rgba(255, 0, 0, 0.7) 0 -1px 7px 1px, inset #aa0000 0 -1px 9px, #FF0000 0 2px 12px;
+}
+
+.led-white {
+  margin: 0;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+  border-radius: 50%;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 -1px 7px 1px, inset #cccccc 0 -1px 9px, #ffffff 0 2px 12px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  background-color: #000000;
+  padding: 0px;
+  width: 400px;
+  grid-gap: 50px 50px;
+  position: absolute;
+}
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  position: relative;
 }
